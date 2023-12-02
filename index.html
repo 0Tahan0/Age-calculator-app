@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./assets/fonts/Poppins-Bold.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins-BoldItalic.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins-ExtraBold.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins-BoldItalic.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins-ExtraBoldItalic.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins-Italic.ttf" />
+    <link rel="stylesheet" href="./assets/fonts/Poppins-Regular.ttf" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <header>
+          <ul>
+            <li>
+              <label for="">day</label>
+              <input
+                type="text"
+                placeholder="DD"
+                maxlength="2"
+                id="_day"
+                class="dateInput"
+              />
+              <span class="errorMessage"></span>
+            </li>
+            <li>
+              <label for="">month</label>
+              <input
+                type="text"
+                placeholder="MM"
+                id="_month"
+                maxlength="2"
+                class="dateInput"
+              />
+              <span class="errorMessage"></span>
+            </li>
+            <li>
+              <label for="">year</label>
+              <input
+                type="text"
+                placeholder="YYYY"
+                id="_year"
+                maxlength="4"
+                class="dateInput"
+              />
+              <span class="errorMessage"></span>
+            </li>
+          </ul>
+          <section></section>
+          <button id="Add" onclick="setDate()"></button>
+        </header>
+        <div class="content">
+          <ul>
+            <li><span id="resultYear">--</span>Years</li>
+            <li><span id="resultMonth">--</span>Months</li>
+            <li><span id="resultDay">--</span>Days</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <i>Mohammed Al-Tahan</i>
+          <a href="https://github.com/0Tahan0" target="_blank">Github</a> &&
+          <a
+            href="https://www.facebook.com/profile.php?id=100040371076931"
+            target="_blank"
+            >Facebook</a
+          >
+        </p>
+      </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
